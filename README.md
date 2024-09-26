@@ -50,3 +50,16 @@ in another class, i.e.:
 ```java
 public class Fruit extends Item {}
 ```
+
+<h4>Polymorhpisms</h4>
+If you hover over the toString function, you'll notice it says "It is recommended that all subclasses override this method.". Overriding and overloading are elements of a  polymorhphism.
+```java
+@Override
+public String toString() {
+    return "Item: " + name + ", Quantity: " + quantity;
+}
+```
+This (above) is just one concept of polymorphisms. Overriding is an example of a **runtime polymorphism**. This method is considered **dynamic**.
+
+There are also **static polymorphisms** which are also known as **compile time
+polypmorphisms**. This is also known as Overloading (versus Overriding).

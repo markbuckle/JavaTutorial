@@ -18,4 +18,9 @@ public class Item {
         return quantity;
     }
 
+    @Override // override the built-in toString 
+    public String toString() {
+        return "Item: " + name + ", Quantity: " + quantity;
+    }
+
 }

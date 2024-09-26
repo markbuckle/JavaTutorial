@@ -18,7 +18,8 @@ public class Inventory {
     // display the inventory
     public void displayInventory() {
         for (Item item : items) {
-            System.out.println("Item: " + item.getName() + ", Quantity: " + item.getQuantity());
+            // if you hover over toString, you'll notice it says "It is recommended that all subclasses override this method.". Overriding and overloading are elements over polymorhphisms.
+            System.out.println(item.toString());
         }
     }
 }
