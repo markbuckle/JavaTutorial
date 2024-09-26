@@ -1,5 +1,6 @@
 // a blueprint for creating new items. Every new item you make is an OBJECT. Hence, Object Oriented Programming (OOP)
-public class Item {
+// Making this class abstract means we can no longer use this class to create an object
+public abstract class Item {
     // private (versus public) means that this attributes cannot be accessed outside of this class
     private String name;
     private int quantity;
@@ -18,9 +19,11 @@ public class Item {
         return quantity;
     }
 
-    @Override // override the built-in toString 
-    public String toString() {
-        return "Item: " + name + ", Quantity: " + quantity;
-    }
+    public abstract void displayInfo();
+
+    // @Override // override the built-in toString 
+    // public String toString() {
+    //     return "Item: " + name + ", Quantity: " + quantity;
+    // }
 
 }

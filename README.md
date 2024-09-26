@@ -68,3 +68,23 @@ polypmorphisms**. This is also known as Overloading (versus Overriding).
 
 Why use static overloading? Static overloading allows for increased performance
 since errors to be compiled during compile time.
+
+<h4>Abstractions</h4>
+
+The concept of hiding implementation details on showing only the essential
+features of an object. Abstracts can be used on Objects or Methods.
+
+<h5>Abstractions for Classes</h5>
+
+Making classes abstract means we can no longer use this class to create an
+object. It essentially turns classes on and off. You won't need an Override
+method within that class anymore.
+
+<h5>Abstractions for Interfaces</h5>
+
+Everything in an interface is assumed to be abstract. No need to write abstract
+after the interface declaration.
+
+We must change any "extends" classifications to "implements"
+
+Why use interfaces? You can implement more than one item at once.

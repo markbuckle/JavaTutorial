@@ -22,10 +22,19 @@ public class Inventory {
         items.add(new Weapon(name, quantity, damage, type));
     }
 
-    // display the inventory
     public void displayInventory() {
+        for (Item item: items) {
+            item.displayInfo();
+        }
+    }
+
+    // display the inventory
+    public void displayInventory(String Type) {
         for (Item item : items) {
             // if you hover over toString, you'll notice it says "It is recommended that all subclasses override this method.". Overriding and overloading are elements over polymorhphisms.
+            if (item instanceof Fruit && ((Fruit) item).getType().equalsIgnoreCase(type)){
+                System.out.println(item.toString());
+        } else if (Item instanceof Weapon && ((Weapon) item).getType().equalsIgnoreCase(type)){
             System.out.println(item.toString());
         }
     }
