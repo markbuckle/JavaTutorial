@@ -1,4 +1,4 @@
-<h3>Java & Objected-Oriented Programming</h3>
+<h3>Java & Object-Oriented Programming</h3>
 
 When creating items within code, every new item you make is an OBJECT. Hence,
 Object Oriented Programming (OOP):
@@ -53,6 +53,7 @@ public class Fruit extends Item {}
 
 <h4>Polymorhpisms</h4>
 If you hover over the toString function, you'll notice it says "It is recommended that all subclasses override this method.". Overriding and overloading are elements of a  polymorhphism.
+<h5>Dynamic Overriding</h5>
 ```java
 @Override
 public String toString() {
@@ -61,5 +62,9 @@ public String toString() {
 ```
 This (above) is just one concept of polymorphisms. Overriding is an example of a **runtime polymorphism**. This method is considered **dynamic**.
 
+<h5>Static Overloading</h5>
 There are also **static polymorphisms** which are also known as **compile time
 polypmorphisms**. This is also known as Overloading (versus Overriding).
+
+Why use static overloading? Static overloading allows for increased performance
+since errors to be compiled during compile time.
